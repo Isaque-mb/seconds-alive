@@ -1,0 +1,129 @@
+@keyframes bounce {
+  0%, 100%, 20%, 50%, 80% {
+    -webkit-transform: translateY(0);
+    -ms-transform: translateY(0);
+    transform: translateY(0)
+  }
+
+  40% {
+    -webkit-transform: translateY(-30px);
+    -ms-transform: translateY(-30px);
+    transform: translateY(-30px)
+  }
+
+  60% {
+    -webkit-transform: translateY(-15px);
+    -ms-transform: translateY(-15px);
+    transform: translateY(-15px)
+  }
+}
+
+body {
+  background-color: rgba(144, 175, 188, 0.5);
+  font-family: sans-serif;
+}
+
+.wrapper {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+}
+
+img {
+  width: 200px;
+  height: auto;
+}
+
+#inputs {
+  width: 700px;
+}
+
+input {
+  padding: 10px;
+}
+
+input #allBttn {
+  padding: 10px;
+  border-left: 1px solid lightgrey;
+  cursor: pointer;
+}
+
+h1 {
+  font-size: 40px;
+  font-family: sans-serif;
+  font-weight: lighter;
+  padding-top: 50px;
+  color: black;
+  -webkit-animation-duration: 1.5s;
+  animation-duration: 1.5s;
+  -webkit-animation-fill-mode: both;
+  animation-fill-mode: both;
+  -webkit-animation-timing-function: ease-in-out;
+  animation-timing-function: ease-in-out;
+  animation-iteration-count: infinite;
+  -webkit-animation-iteration-count: infinite;
+}
+
+h1:hover {
+  cursor: pointer;
+  animation-name: bounce;
+  -moz-animation-name: bounce;
+}
+
+#info {
+  margin-top: 15px;
+  font-size: 20px;
+}
+
+#info #yourAge, #main-span {
+  font-weight: lighter;
+}
+
+#info #answer, #age-span {
+  font-weight: bold;
+  display: inline;
+}
+
+#info #answer2, #age-span2 {
+  display: inline;
+}
+
+#info #error1, #error2 {
+  color: red;
+  font-weight: bold;
+  margin-top: 15px;
+}
+
+footer {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+}
+
+#footer-wrapper {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+#footer-wrapper img {
+  width: 50px;
+  height: auto;
+  padding: 0 10px;
+  cursor: pointer;
+  -webkit-animation-duration: 1s;
+  animation-duration: 1s;
+  -webkit-animation-fill-mode: both;
+  animation-fill-mode: both;
+  -webkit-animation-timing-function: ease-in-out;
+  animation-timing-function: ease-in-out;
+  animation-iteration-count: infinite;
+  -webkit-animation-iteration-count: infinite;
+}
+
+#footer-wrapper img:hover {
+  animation-name: bounce;
+  -moz-animation-name: bounce;
+}
